@@ -554,25 +554,29 @@ textarea {
 
 .footer-form {
     display: flex;
+    gap: 24px;
 }
 
-#footer-form-email {
-    padding: 8px 16px;
+.footer-form-label {
+    display: block;
+}
+
+.footer-form-input {
     width: 264px;
-    border: 1px solid #FFFFFF;
-    border-radius: 4px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    font-weight: 400;
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
     font-size: 12px;
-    line-height: 200%;
+    line-height: 2;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background-color: #2E2F42;
-    margin-right: 24px;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
 }
 
-#footer-form-email::placeholder {
-    color: #FFFFFF;
+.footer-form-input::placeholder {
+    color: #ffffff;
 }
 
 
@@ -582,12 +586,15 @@ textarea {
     justify-content: center;
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4D5AE5;
     color: #FFFFFF;
     border: none;
     cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .footer-form-submit-icon {
