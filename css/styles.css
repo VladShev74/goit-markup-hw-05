@@ -784,10 +784,13 @@ textarea {
 
 .form-custom-checkbox-icon {
     fill: #FFFFFF;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 #user-privacy:checked + .popup-form-checkbox-label > .form-custom-checkbox {
     background-color: #404BBF;
+    border: none;
+    fill: #F4F4FD;
 }
 
 #user-privacy:focus + .popup-form-checkbox-label > .form-custom-checkbox {
@@ -797,7 +800,7 @@ textarea {
 .popup-form-submit {
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background-color: #4D5AE5;
